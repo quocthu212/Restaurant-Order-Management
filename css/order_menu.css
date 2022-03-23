@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-col {
+    flex-direction: column !important;
+}
+
+.navbar {
+    position: sticky;
+    height: 100%;
+    width: 130px;
+    border-right: solid 0.2px rgba(0, 0, 0, 0.151);
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    color: crimson;
+}
