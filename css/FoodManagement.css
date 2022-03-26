@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/*     color: rgb(225 29 72/var(--tw-text-opacity)); */
+.main {
+    /* color: rgb(156, 163, 175); */
+    
+}
+.main .container  {
+    max-width: 1200px;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading h1 {
+    font-size: 30px;
+}
+
+.heading button {
+    color: white;
+    background-color: rgb(225, 29, 72);
+    border: none;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: rgb(225, 29, 72);
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table thead tr th:last-child,
+.table tbody tr td:last-child {
+    text-align: center;
+}
+
+.table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.card-header.bg-dark{
+    color:#fff;
+}
+
+
+.data .add-food-tab .card-body  {
+ 
+}
