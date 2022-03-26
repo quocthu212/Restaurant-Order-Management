@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Itec Restaurant</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../css/FoodManagement.css" />
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="main">
+            <div class="container">
+                <div class="heading">
+                    <h1>Food management</h1>
+                    <button
+                        class="btn"
+                        data-toggle="collapse"
+                        data-target="#categories"
+                        aria-expanded="false"
+                        aria-controls="categories"
+                    >
+                        <i class="fa fa-align-center mr-2"></i>Manage Categories
+                    </button>
+
+                </div>
+                <div class="collapse mt-2" id="categories">
+                    <div class="text-right">
+                        <button class="btn-sort-createdDate btn btn-success">Created Date</button>
+                        <button class="btn-sort-ascending btn btn-danger">Ascending</button>
+                        <button class="btn-sort-descending btn btn-danger">Descending</button>
+                    </div>
+                </div>
+                <div class="data mt-3">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a
+                                class="nav-link active"
+                                id="pills-dish-tab"
+                                data-toggle="pill"
+                                href="#pills-dish"
+                                role="tab"
+                                aria-controls="pills-dish"
+                                aria-selected="true"
+                                >Dish</a
+                            >
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a
+                                class="nav-link"
+                                id="pills-drink-tab"
+                                data-toggle="pill"
+                                href="#pills-drink"
+                                role="tab"
+                                aria-controls="pills-drink"
+                                aria-selected="false"
+                                >Drink</a
+                            >
+                        </li>
+                        <li class="nav-item ml-auto" role="presentation">
+                            <a
+                                class="nav-link"
+                                id="pills-add-tab"
+                                data-toggle="pill"
+                                href="#pills-add"
+                                role="tab"
+                                aria-controls="pills-add"
+                                aria-selected="false"
+                            >
+                                <i class="fa fa-plus"></i>Add</a
+                            >
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div
+                            class="tab-pane fade show active"
+                            id="pills-dish"
+                            role="tabpanel"
+                            aria-labelledby="pills-dish-tab"
+                        >
+                            <table class="table-dish table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>
+                                            <button class="btn btn-warning"><i class="fa fa-edit"></i></button>
+                                            <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="pills-drink" role="tabpanel" aria-labelledby="pills-drink-tab">
+                            <table class="table-drink table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>burh</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Laddddddddddddddddddddddddddddddddddddddddddddddry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div
+                            class="add-food-tab tab-pane fade"
+                            id="pills-add"
+                            role="tabpanel"
+                            aria-labelledby="pills-add-tab"
+                        >
+                            <div>
+                                <div class="card">
+                                    <div class="card-header bg-dark">
+                                        <h5>ADD FOOD FORM</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <form class="needs-validation" id="foodForm">
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="tenMon">Name</label>
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        name="name"
+                                                        id="name"
+                                                        placeholder="Enter food name"
+                                                        required=""
+                                                    />
+                                                    <div id="invalidTen" class="invalid-form"></div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="type">Type</label>
+                                                    <select
+                                                        class="custom-select d-block w-100"
+                                                        id="type"
+                                                        name="type"
+                                                        required=""
+                                                    >
+                                                        <option value="" disabled>Choose type of food</option>
+                                                        <option value="0">Dish</option>
+                                                        <option value="1">Drink</option>
+                                                    </select>
+                                                    <div id="invalidLoai" class="invalid-feedback"></div>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="price">Price</label>
+                                                    <input
+                                                        type="number"
+                                                        class="form-control"
+                                                        id="price"
+                                                        name="price"
+                                                        placeholder="ex: 10000"
+              
+                                      
+                                                        required=""
+                                                    />
+                                                    <div id="invalidGia" class="invalid-feedback"></div>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="form-group">
+                                                    <label for="image">Image</label>
+                                                    <input
+                                                        type="text"
+                                                        id="image"
+                                                        name="image"
+                                                        class="form-control"
+                                                        placeholder="Enter link of image"
+                                                        required=""
+                                                    />
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="description">Description</label>
+                                                <textarea
+                                                    class="form-control"
+                                                    id="description"
+                                                    name="description"
+                                                    rows="3"
+                                                    placeholder="ex: Made from pure oil"
+                                                ></textarea>
+                                                <div id="invalidMoTa" class="invalid-form"></div>
+                                            </div>
+                                            <hr class="mb-4" />
+                                            <button
+                                                id="btn-add-food"
+                                                class="btn btn-warning btn-lg btn-block"
+                                                type="button"
+                                            >
+                                                Add
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-container">
+            <!-- Modal for edit-->
+            <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Edit food</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="">
+                                <div class="card-header bg-dark">
+                                    <h5>EDIT FOOD FORM</h5>
+                                </div>
+                                <div class="card-body">
+                                    <form class="needs-validation" id="editForm">
+                                        <div class="row">
+                                            <div class="col-md-12 mb-3">
+                                                <label for="tenMon">Name</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    name="name"
+                                                    id="name"
+                                                    placeholder="Enter food name"
+                                                    required=""
+                                                />
+                                                <div id="invalidTen" class="invalid-form"></div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="type">Type</label>
+                                                <select
+                                                    class="custom-select d-block w-100"
+                                                    id="type"
+                                                    name="type"
+                                                    required=""
+                                                >
+                                                    <option value="" disabled>Choose type of food</option>
+                                                    <option value="0">Dish</option>
+                                                    <option value="1">Drink</option>
+                                                </select>
+                                                <div id="invalidLoai" class="invalid-feedback"></div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="price">Price</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="price"
+                                                    name="price"
+                                                    placeholder="ex: 10000"
+                                                    value=""
+                                                    required=""
+                                                />
+                                                <div id="invalidGia" class="invalid-feedback"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="form-group">
+                                                <label for="image">Image</label>
+                                                <input
+                                                    type="text"
+                                                    id="image"
+                                                    name="image"
+                                                    class="form-control"
+                                                    placeholder="Enter link of image"
+                                                    required=""
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="description">Description</label>
+                                            <textarea
+                                                class="form-control"
+                                                id="description"
+                                                name="description"
+                                                rows="3"
+                                                placeholder="ex: Made from pure oil"
+                                            ></textarea>
+                                            <div id="invalidMoTa" class="invalid-form"></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn-save-edit-food btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal for add -->
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+            integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+            crossorigin="anonymous"
+        ></script>
+        <script src="../js/FoodManagement.js" type="module"></script>
+    </body>
+</html>
