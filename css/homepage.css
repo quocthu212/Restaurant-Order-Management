@@ -1,0 +1,47 @@
+body, html {
+        height: 100%;
+        margin: 0;
+      }
+      
+.bg{
+        /* The image used */
+        background-image: url("images/1.jpg");
+      
+        /* Full height */
+        height: 100%; 
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+      }
+      .content{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 4px;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+
+      }
+      .content button{
+        width: 50%;
+      }
+      button.btn.btn-secondary.btn-lg {
+        outline: white solid 0.5px;
+        padding: 6px 8px;
+        border-radius: 3px;
+        color: white;
+        font-weight: bold;
+        border: none;
+        margin: 0;
+        background: rgba(0,0,0,0.2);
+        font-family: helvetica, arial, sans-serif;
+        font-size: 17pt;
+    }
+    button.btn.btn-secondary.btn-lg :hover{
+
+        background: black; 
+        color: white;
+    }
