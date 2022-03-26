@@ -15,14 +15,14 @@
   <body>
     <div id="root">
         <div class="d-flex pl-2 ">
-            <nav class="navbar navbar-expand-sm navbar-light bg-transparent flex-col">
+            <nav id="nav" class="navbar navbar-expand-sm navbar-light bg-transparent flex-col"> <!-- Start of nav -->
                 <a class="navbar-brand mb-2" href="#"><i class="fa-solid fa-burger ml-3"></i></a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex flex-col">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex flex-col align-items-center">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Dishes</a>
                         </li>
@@ -34,7 +34,42 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
+            </nav>  <!-- End of nav -->
+            <div id="menu"> <!-- start of menu -->
+                <div class="py-3 px-4">
+                    <h1><strong>Choose</strong> <span>Your Order</span></h1>
+                    <div class="food-card-group d-flex flex-wrap my-3">
+                        <div class="card d-flex align-items-center text-center">
+                            <img src="http://tny.im/rGM" class="card-img-top" alt="Food image">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken burger</h5>
+                                <p class="card-text">50.000đ</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex align-items-center text-center">
+                            <img src="http://tny.im/rGM" class="card-img-top" alt="Food image">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken burger</h5>
+                                <p class="card-text">50.000đ</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex align-items-center text-center">
+                            <img src="http://tny.im/rGM" class="card-img-top" alt="Food image">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken burger</h5>
+                                <p class="card-text">50.000đ</p>
+                            </div>
+                        </div>
+                        <div class="card d-flex align-items-center text-center">
+                            <img src="http://tny.im/rGM" class="card-img-top" alt="Food image">
+                            <div class="card-body">
+                                <h5 class="card-title">Chicken burger</h5>
+                                <p class="card-text">50.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end of menu -->
         </div>
     </div>
 
@@ -47,5 +82,10 @@
 
     <!-- Font-awesome -->
     <script src="https://kit.fontawesome.com/0710300141.js" crossorigin="anonymous"></script>
+
+    <!-- My JavaScript -->
+    <script src="../js/order_menu.js"></script>
   </body>
 </html>
+
+b4
